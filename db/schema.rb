@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_16_193844) do
+ActiveRecord::Schema.define(version: 2019_09_16_225034) do
+
+  create_table "meals", force: :cascade do |t|
+    t.string "type_meal"
+    t.datetime "day_time"
+    t.float "weigth_meal"
+    t.integer "person_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id"], name: "index_meals_on_person_id"
+  end
 
   create_table "people", force: :cascade do |t|
     t.float "weight"

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_meal: MyString
+  day_time: 2019-09-16 22:50:34
+  weigth_meal: 1.5
+  person: one
+
+two:
+  type_meal: MyString
+  day_time: 2019-09-16 22:50:34
+  weigth_meal: 1.5
+  person: two
