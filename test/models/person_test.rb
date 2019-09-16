@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start 'rails'
+
 require 'test_helper'
 
 class PersonTest < ActiveSupport::TestCase
