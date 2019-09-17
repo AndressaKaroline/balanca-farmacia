@@ -22,7 +22,7 @@ class PersonTest < ActiveSupport::TestCase
     end
   end
 
-  test "don't create a person without weight e gender" do
+  test "don't create a person without weight and gender" do
     assert_difference 'Person.all.count', 0 do
       Person.create name: "person", height: "1.60", age: 20, email: "person@123" 
     end
