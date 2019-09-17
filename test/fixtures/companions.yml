@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nutritionist: false
+  person: one
+
+two:
+  name: MyString
+  nutritionist: false
+  person: two

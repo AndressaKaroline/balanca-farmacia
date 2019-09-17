@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_16_225034) do
+ActiveRecord::Schema.define(version: 2019_09_16_230213) do
+
+  create_table "companions", force: :cascade do |t|
+    t.string "name"
+    t.boolean "nutritionist"
+    t.integer "person_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id"], name: "index_companions_on_person_id"
+  end
 
   create_table "meals", force: :cascade do |t|
     t.string "type_meal"
